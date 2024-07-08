@@ -11,7 +11,7 @@ generateBtn.onclick = function() {
     .then((response) => {
         memeParent.classList.remove("hide");
         memeImg.src = response.url;
-        likesParent.textContent = `${response.ups} person liked this shit`;
+        likesParent.textContent = `${response.ups} people liked this shit`;
     })
     .catch((response) => {
         errorParent.classList.remove("hide");
